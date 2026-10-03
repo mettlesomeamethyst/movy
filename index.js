@@ -3,7 +3,7 @@
 //
 // ============================ SETTINGS ============================
 // Replace the domain below (appears ONLY on the next line, no https://, no trailing slash).
-const DOMAIN = 'movy.sx';
+const DOMAIN = 'cinejoy.pk';
 
 // Android package of the browser that should open the link.
 const BROWSER_PACKAGE = 'com.tcl.browser';
