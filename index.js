@@ -3,7 +3,7 @@
 //
 // ============================ SETTINGS ============================
 // Replace the domain below (appears ONLY on the next line, no https://, no trailing slash).
-const DOMAIN = 'movy.sx';
+const DOMAIN = 'dexter.pw';
 
 // Android package of the browser that should open the link.
 const BROWSER_PACKAGE = 'com.tcl.browser';
@@ -64,9 +64,9 @@ async function buildLink(type, rawId) {
   }
   if (!tmdbId) return null;
 
-  if (type === 'movie') return `/movie/${tmdbId}?play=true`;
+  if (type === 'movie') return `/watch/movie/${tmdbId}`;
   if (!season || !episode) return null;
-  return `/tv/${tmdbId}/${season}/${episode}?play=true`;
+  return `/watch/show/${tmdbId}/${season}/${episode}`;
 }
 
 // Android intent URL that forces a specific app (package) to open the https link.
