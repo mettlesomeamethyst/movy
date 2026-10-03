@@ -64,9 +64,9 @@ async function buildLink(type, rawId) {
   }
   if (!tmdbId) return null;
 
-  if (type === 'movie') return `/watch/movie/${tmdbId}/`;
+  if (type === 'movie') return `/watch/movie/${tmdbId}?play=true`;
   if (!season || !episode) return null;
-  return `/watch/tv/${tmdbId}/${season}/${episode}`;
+  return `/watch/tv/${tmdbId}/${season}/${episode}?play=true`;
 }
 
 // Android intent URL that forces a specific app (package) to open the https link.
